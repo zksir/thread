@@ -1,10 +1,10 @@
 package com.zksir.synchroized;
 
 /**
- * 同时访问一个类的不同的普通同步方法
+ * 同时访问静态的synchronized和非静态synchronized方法
  */
-public class SynchronizedDifferentMethod implements Runnable {
-    static SynchronizedDifferentMethod instance = new SynchronizedDifferentMethod();
+public class SynchronizedStaticAndNormal implements Runnable {
+    static SynchronizedStaticAndNormal instance = new SynchronizedStaticAndNormal();
     @Override
     public void run() {
         if (Thread.currentThread().getName().equals("Thread-0")) {
@@ -13,8 +13,8 @@ public class SynchronizedDifferentMethod implements Runnable {
             method2();
         }
     }
-    public synchronized void method1() {
-        System.out.println("我是加锁的方法1，我叫" + Thread.currentThread().getName());
+    public synchronized static void method1() {
+        System.out.println("我是静态加锁的方法1，我叫" + Thread.currentThread().getName());
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
@@ -24,7 +24,7 @@ public class SynchronizedDifferentMethod implements Runnable {
     }
 
     public synchronized void method2() {
-        System.out.println("我是加锁的方法2，我叫" + Thread.currentThread().getName());
+        System.out.println("我是非静态加锁的方法2，我叫" + Thread.currentThread().getName());
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
