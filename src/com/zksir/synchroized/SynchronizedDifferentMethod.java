@@ -1,10 +1,10 @@
 package com.zksir.synchroized;
 
 /**
- * 同时访问同步方法和非同步方法
+ * 同时访问一个类的不同的普通同步方法
  */
-public class SynchronizedYesAnNo implements Runnable {
-    static SynchronizedYesAnNo instance = new SynchronizedYesAnNo();
+public class SynchronizedDifferentMethod implements Runnable {
+    static SynchronizedDifferentMethod instance = new SynchronizedDifferentMethod();
     @Override
     public void run() {
         if (Thread.currentThread().getName().equals("Thread-0")) {
@@ -23,8 +23,8 @@ public class SynchronizedYesAnNo implements Runnable {
         System.out.println(Thread.currentThread().getName() + "运行结束");
     }
 
-    public void method2() {
-        System.out.println("我是没加锁的方法，我叫" + Thread.currentThread().getName());
+    public synchronized void method2() {
+        System.out.println("我是加锁的方法，我叫" + Thread.currentThread().getName());
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
