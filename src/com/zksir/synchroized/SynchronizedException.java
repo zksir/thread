@@ -19,13 +19,11 @@ public class SynchronizedException implements Runnable {
         System.out.println("我是抛异常的方法1，我叫" + Thread.currentThread().getName());
         try {
             Thread.sleep(3000);
-            throw new Exception();
         } catch (InterruptedException e) {
             e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
         }
-        System.out.println(Thread.currentThread().getName() + "运行结束");
+//        System.out.println(Thread.currentThread().getName() + "运行结束");
+        throw new RuntimeException();
     }
 
     public synchronized void method2() {
