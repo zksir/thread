@@ -1,7 +1,7 @@
 package com.zksir.synchroized;
 
 /**
- * 可重入粒度测试：递归调用本方法
+ * 可重入粒度测试1：递归调用本方法
  */
 public class SynchronizedRecursion {
     int a = 0;
@@ -16,6 +16,6 @@ public class SynchronizedRecursion {
 
     public static void main(String[] args) {
         SynchronizedRecursion synchronizedRecursion = new SynchronizedRecursion();
-
+        synchronizedRecursion.method1();
     }
 }
