@@ -12,3 +12,4 @@
     - 可重入粒度测试1：递归调用本方法 SynchronizedRecursion
     - 可重入粒度测试2：调用类内部另外的方法 SynchronizedOtherMethod
     - 可重入粒子测试，调用父类方法 SynchronizedSuperClass
+    - Synchronized锁与Lock锁类比 SynchronizedToLock
