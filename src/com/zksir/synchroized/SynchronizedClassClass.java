@@ -1,5 +1,8 @@
 package com.zksir.synchroized;
 
+/**
+ * 类锁的第二种形式，synchronized(*class)形式
+ */
 public class SynchronizedClassClass implements Runnable {
     static SynchronizedClassClass instance1 = new SynchronizedClassClass();
     static SynchronizedClassClass instance2 = new SynchronizedClassClass();
