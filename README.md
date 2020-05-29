@@ -1,5 +1,12 @@
 # Java多线程学习
-## com.zksir.synchroized----synchroized关键字学习
+## threadcoreknowledge包----线程核心知识基础
+### createthreads包
+    1、实现多线程的方法是1种还是2种还是4种？
+        Oracle官方：2种，一种是将类声明为Thread子类，第二种是实现Runnable接口。
+        - RunnableStyle 用Runnable方式创建线程
+        
+    
+## synchroized包----synchroized关键字学习
     - 消失的请求 DisappearRequest
     - 对象锁示例1，代码块形式 SynchronizedObjectCodeBlock
     - 对象锁示例2，方法锁形式 SynchronizedObjectMethodBlock
@@ -15,3 +22,10 @@
     - Synchronized锁与Lock锁类比 SynchronizedToLock
     - 反编译字节码 Decompilation
     - Lock示例
+
+
+
+
+
+
+
