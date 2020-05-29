@@ -12,6 +12,7 @@
         
         - ThreadPool 线程池创建线程的方法-本质是new Thread
         - DemoTimmerTask 定时器创建线程
+        - AnonymousInnerClassDemo 匿名内部类实现创建线程
         
     
 ## synchroized包----synchroized关键字学习
