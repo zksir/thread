@@ -9,6 +9,8 @@
         本质：Runnable最终调用target.run();ThreadStyle方法run()整个都被重写
         - BothRunnableThread 同时使用Runnable和Thread两种实现线程的方式
         准确的讲，创建线程只有一种方式，那就是构造Thread类，而实现线程的执行单元有两种方式
+        
+        -ThreadPool 线程池创建线程的方法-本质是new Thread
     
 ## synchroized包----synchroized关键字学习
     - 消失的请求 DisappearRequest
