@@ -4,7 +4,8 @@
     1、实现多线程的方法是1种还是2种还是4种？
         Oracle官方：2种，一种是将类声明为Thread子类，第二种是实现Runnable接口。
         - RunnableStyle 用Runnable方式创建线程
-        
+        - ThreadStyle 用Thread方式创建线程
+        对比：实现Runnable接口更好，java是单继承，多接口，可以解耦
     
 ## synchroized包----synchroized关键字学习
     - 消失的请求 DisappearRequest
