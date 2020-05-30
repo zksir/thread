@@ -17,7 +17,11 @@
 
 ### startthread包 启动线程
     - StartAndRunMethod 对比start和run两种启动线程的方式
-    
+    - CantStartTwice 演示不能两次调用start方法，否则会报错
+         * 源码解析：
+         *      启动新线程检查线程状态
+         *      加入线程组
+         *      调用start0()
         
     
 ## synchroized包----synchroized关键字学习
