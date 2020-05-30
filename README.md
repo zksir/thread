@@ -1,6 +1,6 @@
 # Java多线程学习
 ## threadcoreknowledge包----线程核心知识基础
-### createthreads包
+### createthreads包 创建线程
     1、实现多线程的方法是1种还是2种还是4种？
         Oracle官方：2种，一种是将类声明为Thread子类，第二种是实现Runnable接口。
         - RunnableStyle 用Runnable方式创建线程
@@ -14,6 +14,10 @@
         - DemoTimmerTask 定时器创建线程
         - AnonymousInnerClassDemo 匿名内部类实现创建线程
         - Lambda lambda表达式创建线程
+
+### startthread包 启动线程
+    - StartAndRunMethod 对比start和run两种启动线程的方式
+    
         
     
 ## synchroized包----synchroized关键字学习
