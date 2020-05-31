@@ -16,6 +16,7 @@
         - Lambda lambda表达式创建线程
 
 ### startthread包 启动线程
+    2、启动线程正确和错误的方式
     - StartAndRunMethod 对比start和run两种启动线程的方式
     - CantStartTwice 演示不能两次调用start方法，否则会报错
          * start源码解析：
@@ -26,6 +27,11 @@
             *      if (target != null) {
             *         target.run();
             *      }
+### stopthreads包 停止线程
+    3、如何正确停止线程？
+        原理：使用interrupt来通知，而不是强制
+        线程停止的两种情况：1.所有代码都运行完毕；2.有异常出现，异常未被捕获
+    - RightWayStopThreadWithoutSleep run方法没有sleep或wait方法时，停止线程
         
     
 ## synchroized包----synchroized关键字学习
