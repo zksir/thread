@@ -43,6 +43,17 @@
     - RightWayStopThreadWithInProd2 最佳实践2：在catch子句中调用Thread.currentThread().interrupt()
                                      *           来恢复设置中断状态，以便于在后续的执行中，依然能够检查到刚才发生了中断
                                      * 回到刚才RightWayStopThreadWithInProd补上中断，让它跳出
+         响应中断方法总结
+         Object.wait()/wait(long)/wait(long,int)
+         Thread.sleep(long,int)/sleep(long)
+         Thread.join()/join(long)/join(long,int)
+         java.util.concurrent.BlockingQueue.take()/put(E)
+         java.util.concurrent.locks.Lock.lockInterruptibly()
+         java.util.concurrent.CountDownLatch.await()
+         java.util.concurrent.CyclicBarrier.await()
+         java.util.concurrent.Exchanger.exchang(V)
+         java.nio.channles.InterruptibleChannel相关方法
+         java.nio.channles.Selector相关方法
         
     
 ## synchroized包----synchroized关键字学习
