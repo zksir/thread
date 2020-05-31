@@ -36,9 +36,6 @@
     - RightWayStopThreadWithSleepEveryLoop 如果在执行过程中，每次循环都调用sleep或wait等方法，那么不需要每次迭代都检查是否已中断
     - CantInterrupt 如果while里面放try/catch，会导致中断失效，sleep的线程一旦响应中断，会清除线程的中断标记位
         实际开发中两种最佳的中断实践
-    最佳实践1：catch住了InterruptedExcetion之后，优先选择：
-       * 在方法签名中抛出异常
-       * 那么在run()就会强制try/catch
     - RightWayStopThreadWithInProd 最佳实践1：catch住了InterruptedExcetion之后，优先选择：
                                     * 在方法签名中抛出异常
                                     * 那么在run()就会强制try/catch
