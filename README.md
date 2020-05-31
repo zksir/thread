@@ -32,6 +32,8 @@
         原理：使用interrupt来通知，而不是强制
         线程停止的两种情况：1.所有代码都运行完毕；2.有异常出现，异常未被捕获
     - RightWayStopThreadWithoutSleep run方法没有sleep或wait方法时，停止线程
+    - RightWayStopThreadWithSleep 带有sleep的中断线程的写法
+    - RightWayStopThreadWithSleepEveryLoop 如果在执行过程中，每次循环都调用sleep或wait等方法，那么不需要每次迭代都检查是否已中断
         
     
 ## synchroized包----synchroized关键字学习
