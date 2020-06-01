@@ -64,7 +64,10 @@
                    *           没办法完成一个基本单位的操作，会造成脏数据
                    * 总结：stop是不安全的，会会释放掉对象中所有的监视器(monitor)
                    *      suspend和resume会带着锁休眠，不释放锁，导致死锁
-    
+        volatile包
+     - WrongWayVolatile 演示用volatile的局限：part1,演示看似可行的部分
+     - WrongWayVolatileCantStop 演示用volatile的局限：part2 陷入阻塞时，volatile是无法停止线程的
+     - WrongWayVolatileFixed 用中断来修复刚才无尽等待的问题
         
     
 ## synchroized包----synchroized关键字学习
