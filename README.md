@@ -70,6 +70,9 @@
     - WrongWayVolatileFixed 用中断来修复刚才无尽等待的问题
         停止线程相关重要函数
     - RightWayInterrupted Thread.interrupted()方法的目标对象是“当前线程”，而不管本方法来自于哪个对象
+### sixstates包 六个线程状态
+    - NewRunnableTerminated 展示线程New,Runnable,Terminated三种状态。即使是正在运行，也是Runnable状态，而不是Running
+    - BlockedWaitingTimedWaiting 展示Blocked,Waiting,TimedWaiting
     
 ## synchroized包----synchroized关键字学习
     - 消失的请求 DisappearRequest
