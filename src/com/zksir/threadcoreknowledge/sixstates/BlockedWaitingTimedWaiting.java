@@ -2,6 +2,9 @@ package com.zksir.threadcoreknowledge.sixstates;
 
 /**
  * @Describe 展示Blocked,Waiting,TimedWaiting
+ * 这个演示有问题:
+ * 在Win10系统里结果是RUNNABLE、RUNNABLE、WAITING
+ * 在Mac系统里结果是TIMED_WAITING、BLOCKED、WAITING
  */
 public class BlockedWaitingTimedWaiting implements Runnable{
 
