@@ -56,19 +56,20 @@
          java.nio.channles.InterruptibleChannel相关方法
          java.nio.channles.Selector相关方法
          
-         停止线程错误的方法
-         总共两大种错误的停止方法：
+        停止线程错误的方法
+        总共两大种错误的停止方法：
          (1) 被弃用的stop()/suspend()和resume()
          (2) 用volatile设置Boolean标记位
-     - StopThread 错误的停止方法：stop()停止线程，会导致线程运行一半突然停止，
+    - StopThread 错误的停止方法：stop()停止线程，会导致线程运行一半突然停止，
                    *           没办法完成一个基本单位的操作，会造成脏数据
                    * 总结：stop是不安全的，会会释放掉对象中所有的监视器(monitor)
                    *      suspend和resume会带着锁休眠，不释放锁，导致死锁
         volatile包
-     - WrongWayVolatile 演示用volatile的局限：part1,演示看似可行的部分
-     - WrongWayVolatileCantStop 演示用volatile的局限：part2 陷入阻塞时，volatile是无法停止线程的
-     - WrongWayVolatileFixed 用中断来修复刚才无尽等待的问题
-        
+    - WrongWayVolatile 演示用volatile的局限：part1,演示看似可行的部分
+    - WrongWayVolatileCantStop 演示用volatile的局限：part2 陷入阻塞时，volatile是无法停止线程的
+    - WrongWayVolatileFixed 用中断来修复刚才无尽等待的问题
+        停止线程相关重要函数
+    - RightWayInterrupted Thread.interrupted()方法的目标对象是“当前线程”，而不管本方法来自于哪个对象
     
 ## synchroized包----synchroized关键字学习
     - 消失的请求 DisappearRequest
