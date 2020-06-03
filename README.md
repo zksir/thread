@@ -81,6 +81,8 @@
     - ProducerConsumerModel 用wait/notify来实现生产者消费者模式 (最好能默写)
     - WaitNotifyPrintOddEvenSyn 两个线程交替打印0~100的奇偶数，用synchronized关键字实现
     - WaitNotifyPrintOddEveWait 两个线程交替打印0~100的奇偶数，用wait和notify
+    - SleepDontReleaseMonitor 展示线程sleep的时候不释放synchronized的monitor，等sleep时间到了以后，正常结束后才释放锁
+    - 演示sleep不释放lock（lock需要手动释放）
     
     
 ## synchroized包----synchroized关键字学习
