@@ -83,7 +83,10 @@
     - WaitNotifyPrintOddEveWait 两个线程交替打印0~100的奇偶数，用wait和notify
     - SleepDontReleaseMonitor 展示线程sleep的时候不释放synchronized的monitor，等sleep时间到了以后，正常结束后才释放锁
     - SleepDontReleaseLock 演示sleep不释放lock（lock需要手动释放）
-    - SleepInterrupted  每个1秒钟输出当前时间，被中断，观察。
+    - SleepInterrupted  每个1秒钟输出当前时间，被中断，观察。 
+        * 1.抛出InterruptedException
+        * 2.清除中断状态
+    
     
     
 ## synchroized包----synchroized关键字学习

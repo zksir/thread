@@ -7,6 +7,8 @@ import java.util.concurrent.TimeUnit;
  * @Describe 每个1秒钟输出当前时间，被中断，观察。
  * Thread.sleep()
  * TimeUnit.SECONDS.sleep()
+ * 1.抛出InterruptedException
+ * 2.清除中断状态
  */
 public class SleepInterrupted implements Runnable{
 
@@ -21,8 +23,8 @@ public class SleepInterrupted implements Runnable{
         for (int i = 0; i < 10; i++) {
             System.out.println(new Date());
             try {
-                TimeUnit.HOURS.sleep(3);
-                TimeUnit.MINUTES.sleep(25);
+//                TimeUnit.HOURS.sleep(3);
+//                TimeUnit.MINUTES.sleep(25);
                 TimeUnit.SECONDS.sleep(1);
             } catch (InterruptedException e) {
                 System.out.println("我被中断了！");
