@@ -78,7 +78,7 @@
     - WaitNotifyAll 3个线程，线程1和线程2首先被阻塞，线程3唤醒它们。notify, notifyAll。 start先执行不代表线程先启动。
         wait,notify,notifyAll性质：使用必先拥有monitor,notify只能唤醒一个，属于Object类，类似功能，Condition
     - WaitNotifyReleaseOwnMonitor 证明wait只释放当前那把锁
-    - ProducerConsumerModel 用wait/notify来实现生产者消费者模式
+    - ProducerConsumerModel 用wait/notify来实现生产者消费者模式 (最好能默写)
     - WaitNotifyPrintOddEvenSyn 两个线程交替打印0~100的奇偶数，用synchronized关键字实现
     - WaitNotifyPrintOddEveWait 两个线程交替打印0~100的奇偶数，用wait和notify
     
