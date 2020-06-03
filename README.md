@@ -73,6 +73,10 @@
 ### sixstates包 六个线程状态
     - NewRunnableTerminated 展示线程New,Runnable,Terminated三种状态。即使是正在运行，也是Runnable状态，而不是Running
     - BlockedWaitingTimedWaiting 展示Blocked,Waiting,TimedWaiting
+### threadobjectclasscommonmethods包 Thread类和Object类重要方法
+    - Wait 展示wait和notify的基本用法 1. 研究代码执行顺序 2. 证明wait释放锁
+    - WaitNotifyAll 3个线程，线程1和线程2首先被阻塞，线程3唤醒它们。notify, notifyAll。 start先执行不代表线程先启动。
+    
     
 ## synchroized包----synchroized关键字学习
     - 消失的请求 DisappearRequest
