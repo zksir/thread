@@ -84,8 +84,12 @@
     - SleepDontReleaseMonitor 展示线程sleep的时候不释放synchronized的monitor，等sleep时间到了以后，正常结束后才释放锁
     - SleepDontReleaseLock 演示sleep不释放lock（lock需要手动释放）
     - SleepInterrupted  每个1秒钟输出当前时间，被中断，观察。 
-        * 1.抛出InterruptedException
-        * 2.清除中断状态
+                        * 1.抛出InterruptedException
+                        * 2.清除中断状态
+    - Join 演示join
+            * 作用：因为新的线程加入，所以要等待他执行完再出发
+            * 用法：main等待thread1执行完毕，注意谁等谁
+    - JoinInterrupt 演示join期间被中断的效果
     
     
     
