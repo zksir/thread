@@ -92,6 +92,12 @@
     - JoinInterrupt 演示join期间被中断的效果
     - JoinPrinciple join原理，join的代替写法
     - CurrentThread 演示打印main, Thread-0, Thread-1
+    - ID从1开始，JVM运行起来后，我们自己创建的线程的ID早已不是2.
+### uncaughtexception包 线程未捕获异常处理
+    - CantCatchDirectly 说明线程的异常不能用传统方法捕获
+    - ExceptionInChildThread 单线程，抛出，处理，有异常堆栈 多线程，子线程发生异常
+    - MyUncaughtExceptionHandler 自己的MyUncaughtExceptionHanlder
+    - UseOwnUncaughtExceptionHandler 使用刚才自己写的UncaughtExceptionHandler
     
     
     
