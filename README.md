@@ -90,7 +90,8 @@
             * 作用：因为新的线程加入，所以要等待他执行完再出发
             * 用法：main等待thread1执行完毕，注意谁等谁
     - JoinInterrupt 演示join期间被中断的效果
-    - join原理，join的代替写法
+    - JoinPrinciple join原理，join的代替写法
+    - CurrentThread 演示打印main, Thread-0, Thread-1
     
     
     
