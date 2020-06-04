@@ -99,6 +99,14 @@
     - MyUncaughtExceptionHandler 自己的MyUncaughtExceptionHanlder
     - UseOwnUncaughtExceptionHandler 使用刚才自己写的UncaughtExceptionHandler
     
+## background包 线程安全
+    - MultiThreadsError 第一种：运行结果出错。 演示计数不准确（减少），找出具体出错的位置。
+    - MultiThreadError 第二种线程安全问题，演示死锁。
+    - MultiThreadsError3 发布逸出
+    - MultiThreadsError4 初始化未完毕，就this赋值
+    - MultiThreadsError5 观察者模式
+    - MultiThreadsError6 构造函数中新建线程
+    - MultiThreadsError7 用工厂模式修复刚才的初始化问题
     
     
 ## synchroized包----synchroized关键字学习
