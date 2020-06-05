@@ -108,7 +108,7 @@
     - MultiThreadsError6 构造函数中新建线程
     - MultiThreadsError7 用工厂模式修复刚才的初始化问题
     
-### jmm java内存模型
+### JMM java内存模型
     - OutOfOrderExecution 演示重排序的现象 “直到达到某个条件才停止”，测试小概率事件
     - FieldVisibility 演示可见性带来的问题
     
