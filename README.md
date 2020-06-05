@@ -99,7 +99,7 @@
     - MyUncaughtExceptionHandler 自己的MyUncaughtExceptionHanlder
     - UseOwnUncaughtExceptionHandler 使用刚才自己写的UncaughtExceptionHandler
     
-## background包 线程安全
+### background包 线程安全
     - MultiThreadsError 第一种：运行结果出错。 演示计数不准确（减少），找出具体出错的位置。
     - MultiThreadError 第二种线程安全问题，演示死锁。
     - MultiThreadsError3 发布逸出
@@ -108,6 +108,9 @@
     - MultiThreadsError6 构造函数中新建线程
     - MultiThreadsError7 用工厂模式修复刚才的初始化问题
     
+### jmm java内存模型
+    - OutOfOrderExecution 演示重排序的现象 “直到达到某个条件才停止”，测试小概率事件
+    - FieldVisibility 演示可见性带来的问题
     
 ## synchroized包----synchroized关键字学习
     - 消失的请求 DisappearRequest
@@ -125,6 +128,8 @@
     - Synchronized锁与Lock锁类比 SynchronizedToLock
     - 反编译字节码 Decompilation
     - Lock示例
+    
+
 
 
 
