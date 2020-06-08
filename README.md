@@ -108,9 +108,22 @@
     - MultiThreadsError6 构造函数中新建线程
     - MultiThreadsError7 用工厂模式修复刚才的初始化问题
     
-### JMM java内存模型
+### JMM包 java内存模型
     - OutOfOrderExecution 演示重排序的现象 “直到达到某个条件才停止”，测试小概率事件
     - FieldVisibility 演示可见性带来的问题
+    - FieldVisibilityABCD 演示可见性带来的问题
+    - UseVolatile1 volatile适用的情况1
+    - NoVolatile 不适用于volatile的场景
+    - volatile不适用的情况2 不适用于volatile的场景2
+### singleton包 单例模式8种实现方法
+    - Singleton1 饿汉式（静态常量）（可用）
+    - Singleton2 饿汉式（静态代码块）（可用）
+    - Singleton3 懒汉式（线程不安全）
+    - Singleton4 懒汉式（线程安全）（不推荐）
+    - Singleton5 懒汉式（线程不安全）（不推荐）
+    - Singleton6 双重检查（推荐面试使用）
+    - Singleton7 静态内部类方式，可用
+    - Singleton8 枚举单例（推荐使用）
     
 ## synchroized包----synchroized关键字学习
     - 消失的请求 DisappearRequest
