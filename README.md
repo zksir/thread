@@ -127,9 +127,10 @@
 ### deadlock包 死锁
     - MustDeadLock 必定发生死锁的情况
     - TransferMoney  转账时候遇到死锁
-    - TransferMoney 多人同时转账
+    - MultiTransferMoney 多人同时转账
     - DiningPhilosophers 演示哲学家就餐问题导致的死锁
     - ThreadMXBeanDetection 用ThreadMXBean检测死锁
+    - TryLockDeadlock 用tryLock来避免死锁
     - LiveLock 演示活锁问题
     
 ## synchroized包----synchroized关键字学习
