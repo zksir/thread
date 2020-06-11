@@ -124,6 +124,13 @@
     - Singleton6 双重检查（推荐面试使用）
     - Singleton7 静态内部类方式，可用
     - Singleton8 枚举单例（推荐使用）
+### deadlock包 死锁
+    - MustDeadLock 必定发生死锁的情况
+    - TransferMoney  转账时候遇到死锁
+    - TransferMoney 多人同时转账
+    - DiningPhilosophers 演示哲学家就餐问题导致的死锁
+    - ThreadMXBeanDetection 用ThreadMXBean检测死锁
+    - LiveLock 演示活锁问题
     
 ## synchroized包----synchroized关键字学习
     - 消失的请求 DisappearRequest
