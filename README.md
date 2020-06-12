@@ -161,6 +161,16 @@
     - ShutDown 演示关闭线程池
     - PauseableThreadPool 演示每个任务执行前后放钩子函数
     
+### threadlocal threadocal用法
+    - ThreadLocalNormalUsage00 两个线程打印日期
+    - ThreadLocalNormalUsage01 10个线程打印日期
+    - ThreadLocalNormalUsage02 1000个打印日期的任务，用线程池来执行
+    - ThreadLocalNormalUsage03 1000个打印日期的任务，用线程池来执行
+    - ThreadLocalNormalUsage04 加锁来解决线程安全问题
+    - ThreadLocalNormalUsage05 利用ThreadLocal，给每个线程分配自己的dateFormat对象，保证了线程安全，高效利用内存
+    - ThreadLocalNormalUsage06 演示ThreadLocal用法2：避免传递参数的麻烦
+    - ThreadLocalNormalUsage06 演示ThreadLocal用法2：避免传递参数的麻烦
+    
 
 
 
