@@ -161,7 +161,7 @@
     - ShutDown 演示关闭线程池
     - PauseableThreadPool 演示每个任务执行前后放钩子函数
     
-### threadlocal threadocal用法
+### threadlocal包 threadocal用法
     - ThreadLocalNormalUsage00 两个线程打印日期
     - ThreadLocalNormalUsage01 10个线程打印日期
     - ThreadLocalNormalUsage02 1000个打印日期的任务，用线程池来执行
@@ -170,6 +170,28 @@
     - ThreadLocalNormalUsage05 利用ThreadLocal，给每个线程分配自己的dateFormat对象，保证了线程安全，高效利用内存
     - ThreadLocalNormalUsage06 演示ThreadLocal用法2：避免传递参数的麻烦
     - ThreadLocalNormalUsage06 演示ThreadLocal用法2：避免传递参数的麻烦
+
+### lock.lock包 lock锁初识
+    - MustUnlock Lock不会像synchronized一样，异常的时候自动释放锁，所以最佳实践是，finally中释放锁，以便保证发生异常的时候锁一定被释放（悲观锁）
+    - TryLockDeadlock 用tryLock来避免死锁 
+    - LockInterruptibly 获取锁时，被中断
+    - PessimismOptimismLock 演示锁可见性保证（乐观锁）
+
+### lock.reentrantlock包 reentrantlock演示可重入锁
+    - CinemaBookSeat 演示多线程预定电影院座位 
+    - LockDemo 演示ReentrantLock的基本用法，演示被打断
+    - GetHoldCount 演示reentrantlock可重入性
+    - RecursionDemo 递归演示可重入性锁
+    - FairLock 演示公平和不公平锁两种情况
+    
+### lock.readwrite包 ReentrantReadWriteLock演示共享锁和排他锁
+    - CinemaReadWrite 演示ReentrantReadWriteLock具体用法
+    - NonfairBargeDemo 演示非公平和公平的ReentrantReadWriteLock的策略
+    - CinemaReadWriteQueue 演示读写锁公平性质
+    - Upgrading 演示ReentrantReadWriteLock可以降级，不能升级
+    
+### lock.spinlock包 自旋锁
+    - SpinLock 自旋锁
     
 
 
