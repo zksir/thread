@@ -192,6 +192,12 @@
     
 ### lock.spinlock包 自旋锁
     - SpinLock 自旋锁
+
+### atomic包 原子类
+    - AtomicIntegerDemo1 演示AtomicInteger的基本用法，对比非原子类的线程安全问题，使用了原子类之后，不需要加锁，也可以保证线程安全。
+    - AtomicArrayDemo 演示原子数组的使用方法
+    
+    
     
 
 
